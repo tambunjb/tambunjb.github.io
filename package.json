@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "deploy": "npm run build && npx gh-pages -d out"
+    "deploy": "npm run build && touch out/.nojekyll && npx gh-pages -d out --dotfiles"
   },
   "dependencies": {
     "cheerio": "^1.0.0",

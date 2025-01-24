@@ -1,6 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export'
+  output: 'export', // Static site export
+  assetPrefix: './', // Use relative paths for all assets
 };
 
 export default nextConfig;
